@@ -9,12 +9,175 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body>
-    <main
-        class="w-full min-h-screen bg-gradient-to-r from-fuchsia-500 to-cyan-500 flex items-center justify-center">
-        <h1 class="font-mono font-bold text-3xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Vite + Typescript + TailwindCSS + GitHub Pages
-        </h1>
+<body class="bg-white">
+    <main class="w-full min-h-screen flex flex-col items-center">
+        <!-- md:px-[5vw] -->
+        <!-- top -->
+        <section
+            class="flex md:px-[8vw] flex-col justify-between pb-32 w-full bg-[url(/images/desktop/image-hero.jpg)] bg-cover aspect-[144/65]">
+            <nav class="w-full flex items-center justify-between py-12">
+                <img src="/images/logo.svg" alt="logo">
+                <div class="flex items-center gap-4 text-white font-alata">
+                    <button>About</button>
+                    <button>Careers</button>
+                    <button>Events</button>
+                    <button>Products</button>
+                    <button>Support</button>
+                </div>
+            </nav>
+            <!-- square title -->
+            <h1
+                class="text-[4rem] leading-[4rem] border-2 border-white px-8 py-6 text-white font-josefin uppercase font-light md:max-w-[35rem]">
+                Immersive experiences that deliver</h1>
+        </section>
+        <!-- middle -->
+        <section class="md:px-[8vw] flex w-full relative pt-36">
+            <img src="/images/desktop/image-interactive.jpg" alt="interactive image" class="md:w-[50vw]">
+            <div class="bg-white pl-24 pt-20 flex flex-col bottom-0 md:right-[10vw] md:max-w-[35rem] absolute gap-6">
+                <h2 class="uppercase text-[3rem] leading-[3rem] font-josefin font-light">The leader in interactive VR
+                </h2>
+                <p class="font-alata text-c_Very_Dark_Gray">
+                    Founded in 2011, Loopstudios has been producing world-class virtual reality
+                    projects for some of the best companies around the globe. Our award-winning
+                    creations have transformed businesses through digital experiences that bind
+                    to their brand.
+                </p>
+            </div>
+        </section>
+        <!-- creations -->
+        <section class="py-24 md:px-[8vw] flex flex-col w-full">
+            <div class="flex items-center justify-between w-full py-12">
+                <h2 class="font-josefin font-light text-[2.5rem]">OUR CREATIONS</h2>
+                <button class="font-alata tracking-wider px-8 py-1 border-2 border-c_Very_Dark_Gray uppercase">see
+                    all</button>
+            </div>
+            <div class="md:grid grid-cols-4 flex flex-col gap-6">
+                <div
+                    class="md:bg-[url(/images/desktop/image-deep-earth.jpg)] bg-[url(/images/mobile/image-deep-earth.jpg)] md:aspect-[256/450] aspect-[654/240] bg-cover flex flex-col justify-end text-white relative">
+                    <h3 class="font-josefin px-8 py-6 text-3xl font-light uppercase max-w-48 z-10">Deep earth</h3>
+                    <div class="bg-gradient-to-b from-transparent to-black bottom-0 h-32 w-full opacity-60 absolute">
+                    </div>
+                </div>
+                <div
+                    class="md:bg-[url(/images/desktop/image-night-arcade.jpg)] bg-[url(/images/mobile/image-night-arcade.jpg)] md:aspect-[256/450] aspect-[654/240] bg-cover flex flex-col justify-end text-white relative">
+                    <h3 class="font-josefin px-8 py-6 text-3xl font-light uppercase max-w-48 z-10">Night arcade</h3>
+                    <div class="bg-gradient-to-b from-transparent to-black bottom-0 h-32 w-full opacity-60 absolute">
+                    </div>
+                </div>
+                <div
+                    class="md:bg-[url(/images/desktop/image-soccer-team.jpg)] bg-[url(/images/mobile/image-soccer-team.jpg)] md:aspect-[256/450] aspect-[654/240] bg-cover flex flex-col justify-end text-white relative">
+                    <h3 class="font-josefin px-8 py-6 text-3xl font-light uppercase max-w-52 z-10">Soccer team VR</h3>
+                    <div class="bg-gradient-to-b from-transparent to-black bottom-0 h-32 w-full opacity-60 absolute">
+                    </div>
+                </div>
+                <div
+                    class="md:bg-[url(/images/desktop/image-grid.jpg)] bg-[url(/images/mobile/image-grid.jpg)] md:aspect-[256/450] aspect-[654/240] bg-cover flex flex-col justify-end text-white relative">
+                    <h3 class="font-josefin px-8 py-6 text-3xl font-light md:max-w-24 uppercase z-10">the grid</h3>
+                    <div class="bg-gradient-to-b from-transparent to-black bottom-0 h-32 w-full opacity-60 absolute">
+                    </div>
+                </div>
+                <div
+                    class="md:bg-[url(/images/desktop/image-from-above.jpg)] bg-[url(/images/mobile/image-from-above.jpg)] md:aspect-[256/450] aspect-[654/240] bg-cover flex flex-col justify-end text-white relative">
+                    <h3 class="font-josefin px-8 py-6 text-3xl font-light uppercase z-10">From up above VR</h3>
+                    <div class="bg-gradient-to-b from-transparent to-black bottom-0 h-32 w-full opacity-60 absolute">
+                    </div>
+                </div>
+                <div
+                    class="md:bg-[url(/images/desktop/image-pocket-borealis.jpg)] bg-[url(/images/mobile/image-pocket-borealis.jpg)] md:aspect-[256/450] aspect-[654/240] bg-cover flex flex-col justify-end text-white relative">
+                    <h3 class="font-josefin px-8 py-6 text-3xl font-light uppercase max-w-48 z-10">Pocket borealis</h3>
+                    <div class="bg-gradient-to-b from-transparent to-black bottom-0 h-32 w-full opacity-60 absolute">
+                    </div>
+                </div>
+                <div
+                    class="md:bg-[url(/images/desktop/image-curiosity.jpg)] bg-[url(/images/mobile/image-curiosity.jpg)] md:aspect-[256/450] aspect-[654/240] bg-cover flex flex-col justify-end text-white relative">
+                    <h3 class="font-josefin px-8 py-6 text-3xl font-light uppercase max-w-48 z-10">The curiosity</h3>
+                    <div class="bg-gradient-to-b from-transparent to-black bottom-0 h-32 w-full opacity-60 absolute">
+                    </div>
+                </div>
+                <div
+                    class="md:bg-[url(/images/desktop/image-fisheye.jpg)] bg-[url(/images/mobile/image-fisheye.jpg)] md:aspect-[256/450] aspect-[654/240] bg-cover flex flex-col justify-end text-white relative">
+                    <h3 class="font-josefin px-8 py-6 text-3xl font-light uppercase max-w-48 z-10">Make it fisheye</h3>
+                    <div class="bg-gradient-to-b from-transparent to-black bottom-0 h-32 w-full opacity-60 absolute">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer class="md:px-[8vw] flex items-center justify-between w-full bg-black py-12">
+            <div class="flex flex-col gap-6">
+                <img src="/images/logo.svg" alt="logo" class="h-6 w-fit">
+                <div class="flex items-center gap-6 w-fit text-white font-josefin text-sm">
+                    <button class="group relative">
+                        <span>About</span>
+                        <span class="absolute -bottom-1 left-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                        <span class="absolute -bottom-1 right-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                    </button>
+                    <button class="group relative">
+                        <span>Careers</span>
+                        <span class="absolute -bottom-1 left-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                        <span class="absolute -bottom-1 right-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                    </button>
+                    <button class="group relative">
+                        <span>Events</span>
+                        <span class="absolute -bottom-1 left-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                        <span class="absolute -bottom-1 right-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                    </button>
+                    <button class="group relative">
+                        <span>Products</span>
+                        <span class="absolute -bottom-1 left-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                        <span class="absolute -bottom-1 right-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                    </button>
+                    <button class="group relative">
+                        <span>Support</span>
+                        <span class="absolute -bottom-1 left-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                        <span class="absolute -bottom-1 right-1/2 h-0.5 w-0 bg-white group-hover:w-1/4
+                            group-hover:transition-all"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col items-end justify-between gap-6">
+                <div class="flex items-center gap-3 h-full">
+                    <div class="group relative cursor-pointer">
+                        <img src="/images/icon-facebook.svg" alt="fb icon" class="size-5">
+                        <span class="absolute -bottom-2 left-1/2 h-0.5 w-0 bg-white group-hover:w-1/2
+                            group-hover:transition-all"></span>
+                        <span class="absolute -bottom-2 right-1/2 h-0.5 w-0 bg-white group-hover:w-1/2
+                            group-hover:transition-all"></span>
+                    </div>
+                    <div class="group relative cursor-pointer">
+                        <img src="/images/icon-twitter.svg" alt="twitter icon" class="size-5">
+                        <span class="absolute -bottom-2 left-1/2 h-0.5 w-0 bg-white group-hover:w-1/2
+                        group-hover:transition-all"></span>
+                        <span class="absolute -bottom-2 right-1/2 h-0.5 w-0 bg-white group-hover:w-1/2
+                        group-hover:transition-all"></span>
+                    </div>
+                    <div class="group relative cursor-pointer">
+                        <img src="/images/icon-pinterest.svg" alt="pinterest icon" class="size-5">
+                        <span class="absolute -bottom-2 left-1/2 h-0.5 w-0 bg-white group-hover:w-1/2
+                        group-hover:transition-all"></span>
+                        <span class="absolute -bottom-2 right-1/2 h-0.5 w-0 bg-white group-hover:w-1/2
+                        group-hover:transition-all"></span>
+                    </div>
+                    <div class="group relative cursor-pointer">
+                        <img src="/images/icon-instagram.svg" alt="ig icon" class="size-5">
+                        <span class="absolute -bottom-2 left-1/2 h-0.5 w-0 bg-white group-hover:w-1/2
+                        group-hover:transition-all"></span>
+                        <span class="absolute -bottom-2 right-1/2 h-0.5 w-0 bg-white group-hover:w-1/2
+                        group-hover:transition-all"></span>
+                    </div>
+                </div>
+                <span class="text-xs text-c_Dark_Gray">© 2021 Loopstudios. All rights reserved.</span>
+            </div>
+        </footer>
     </main>
     <script type="module" src="/src/main.ts"></script>
 </body>

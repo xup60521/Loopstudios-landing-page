@@ -7,10 +7,12 @@ export default {
     theme: {
         extend: {
             colors: {
-
+                c_Dark_Gray: "hsl(0, 0%, 55%)",
+                c_Very_Dark_Gray: "hsl(0, 0%, 41%)",
             },
             fontFamily: {
-
+                alata: ["Alata", "sans-serif"],
+                josefin: ["Josefin Sans", "system-ui"]
             }
         },
     },
